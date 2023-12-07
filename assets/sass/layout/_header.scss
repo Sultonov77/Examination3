@@ -1,0 +1,62 @@
+.welcome__page {
+  background-image: url("/assets/images/photos/header-image.png");
+  background-size: 1300px 1000px;
+  background-repeat: no-repeat;
+  height: 1000px;
+  width: 1300px;
+  position: relative;
+  z-index: 2;
+}
+.header {
+  @include dFlex;
+  column-gap: 960px;
+  background: rgba(0, 0, 0, 0.4);
+  height: 90px;
+  width: 1300px;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+}
+.header__logo {
+  top: 55px;
+  z-index: 100;
+  position: fixed;
+  margin: 0 550px;
+}
+.header__subtitle {
+  padding-top: 450px;
+  color: #fff;
+}
+.header__button {
+  @include dFlex(center);
+  margin-top: 220px;
+  column-gap: 50px;
+}
+.button1 {
+  border: 1px solid #c4c4c4;
+  background: rgba(17, 17, 17, 0.6);
+  width: 348px;
+  height: 77px;
+  flex-shrink: 0;
+  column-gap: 40px;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  column-gap: 40px;
+}
+.button1:hover {
+  background-color: black;
+}
+.information__desk {
+  background: var(--Gray-6, #f2f2f2);
+  width: 1240px;
+  height: 240px;
+  flex-shrink: 0;
+  margin: 40px auto;
+  padding-top: 15px;
+  padding-left: 25px;
+}
